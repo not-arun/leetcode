@@ -2,7 +2,7 @@ package medium._931;
 
 public class Solution {
 
-    public static int minFallingPathSum(int[][] matrix) {
+    public int minFallingPathSum(int[][] matrix) {
 
         int size = matrix.length;
         int[][] dp = new int[size][size];
@@ -27,15 +27,5 @@ public class Solution {
         }
         System.gc();
         return result;
-    }
-
-    public static void main(String[] args) {
-
-        int[][] matrix = new int[][]{
-                {2, 1, 3},
-                {6, 5, 4},
-                {7, 8, 9}
-        };
-        System.out.println(minFallingPathSum(matrix));
     }
 }
