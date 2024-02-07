@@ -5,10 +5,10 @@ import java.util.List;
 
 public class AlternativeSolution {
 
-    private record Pair<K,V>(K key, V val) {
+    private record Pair<K, V>(K key, V val) {
     }
 
-    public static String frequencySort(String s) {
+    public String frequencySort(String s) {
 
         int[] freq = new int[75]; // 0(ASCII - 48) to z(ASCII - 122)
         char[] chars = s.toCharArray();
@@ -26,9 +26,5 @@ public class AlternativeSolution {
             builder.append(String.valueOf(c).repeat(Math.max(0, pair.val())));
         }
         return builder.toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(frequencySort("tree"));
     }
 }
