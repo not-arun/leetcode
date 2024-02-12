@@ -40,5 +40,4 @@ public class Solution {
         }
         return cherryPickupHelper(0, 0, len - 1, grid, arr);
     }
-
 }
